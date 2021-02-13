@@ -1,0 +1,21 @@
+{
+    "Terminal Mcq Prompt":{
+        "prefix": "ss.terminal.mcq", 
+        "body": [
+            "// npm install --save decova-terminal",
+            "// import { CurrentTerminal as Terminal } from \"decova-terminal/CurrentTerminal\";",
+            
+            "let ops = { ${1:option1}: '${2:option1 text}'};",
+            "let op = await Terminal.McqAsync('${0:question}', ops);",
+            "switch(op)",
+            "{",
+                "\tcase ops.${1:option1}:",
+                "\t\tconsole.log('ops.${1:option1}');",
+                "\t\tbreak;",
+            "}"
+        ]
+    }
+    
+}
+
+
