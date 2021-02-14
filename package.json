@@ -1,10 +1,42 @@
 {
 	"name": "poyka",
-	"displayName": "Poyka",
-	"description": "Augments VSCode experience with commands from various tools at your handy quick pick.",
-	"version": "0.0.2",
-	"publisher": "decova",
+	"version": "0.0.7",
+	"liscense": "",
 	"main": "./out/extension.js",
+	"module": "",
+	"description": "Augments VSCode experience with commands from various tools at your handy quick pick.",
+	"sourceMap": true,
+	"inlineSourceMap": false,
+	"outDir": "",
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"lint": "eslint . --ext .ts,.tsx",
+		"watch": "tsc -watch -p ./"
+	},
+	"files": [],
+	"keywords": [],
+	"dependencies": {
+		"decova-dotnet-developer": "^1.3.67",
+		"decova-environment": "0.0.5",
+		"decova-filesystem": "^1.1.50",
+		"decova-terminal": "^0.1.61",
+		"decova-vscode": "0.0.19",
+		"mongoose": "^5.11.16"
+	},
+	"bin": {},
+	"devDependencies": {
+		"@types/node": "^12.12.0",
+		"@typescript-eslint/eslint-plugin": "^3.0.2",
+		"@typescript-eslint/parser": "^3.0.2",
+		"eslint": "^7.1.0",
+		"typescript": "^4.0.2"
+	},
+	"displayName": "Poyka",
+	"repository": {
+		"url": "https://github.com/georgemesseha/poyka-extension"
+	},
+	"publisher": "GeorgeMesseha",
 	"engines": {
 		"vscode": "^1.32.0"
 	},
@@ -27,26 +59,5 @@
 				"key": "ctrl+shift+;"
 			}
 		]
-	},
-	"scripts": {
-		"vscode:prepublish": "npm run compile",
-		"compile": "tsc -p ./",
-		"lint": "eslint . --ext .ts,.tsx",
-		"watch": "tsc -watch -p ./"
-	},
-	"devDependencies": {
-		"@types/node": "^12.12.0",
-		"@typescript-eslint/eslint-plugin": "^3.0.2",
-		"@typescript-eslint/parser": "^3.0.2",
-		"eslint": "^7.1.0",
-		"typescript": "^4.0.2"
-	},
-	"dependencies": {
-		"decova-dotnet-developer": "^1.3.67",
-		"decova-environment": "0.0.5",
-		"decova-filesystem": "^1.1.50",
-		"decova-terminal": "^0.1.61",
-		"decova-vscode": "0.0.15",
-		"mongoose": "^5.11.16"
 	}
 }

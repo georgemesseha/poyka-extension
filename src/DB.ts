@@ -6,8 +6,9 @@ import * as mongoose from "mongoose";
 const uri = `mongodb+srv://aipianist:poykaIsGreat@poykacommandsheet.yw0ri.mongodb.net/CommandSheet?retryWrites=true&w=majority`;
 export interface ICommand
 {
-    SearchString: string,
+    Description: string,
     CliCommand: string,
+    SearchText: string,
 }
 
 export class DB
